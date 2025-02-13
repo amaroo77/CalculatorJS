@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- declaring the usage of HTML document type in the browser -->
+<html lang="en"> <!-- set the language of the browser to English -->
+<head> <!-- creating the head of the web -->
+	<meta charset="UTF-8"> <!-- set the format of character used in the web -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- set the layout of the browser to match with the device -->
+	<title>Document</title> <!-- Set the title of the web as "Document" -->
+	<link rel="stylesheet" href="style.css"> <!-- Linking style of the web to the css code -->
+</head> <!-- Closing head part -->
+<body> <!-- Parameter for body part -->
+	<div id="calculator"> <!-- set the element name to calculator to be edit using CSS -->
+		<input id="display" readonly> <!-- create the display element, ensure it cannot be change by set the readonly mode-->
+		<div id="keys"> <!-- Creating each button for the calculator -->
+			<button onclick="appendToDisplay('+')" class="operator-btn">+</button> <!-- set the function to make the keys function and displaying when pressed -->
+			<!-- set the class of operator button to change color using CSS -->
+			<!-- onclick means while the button is pressed, then do something -->
+			<!-- appendToDisplay means display the number/operation that is clicked -->
+			<!-- character between > and < is what will be shown on the button -->
+			<!-- while character inside the ('') is the input that'll be shown in the display -->
+			<button onclick="appendToDisplay('7')">7</button> <!-- copy and paste -->
+			<button onclick="appendToDisplay('8')">8</button>
+			<button onclick="appendToDisplay('9')">9</button>
+			<button onclick="appendToDisplay('-')" class="operator-btn">-</button> <!-- set the class of operator button to change color using CSS -->
+			<button onclick="appendToDisplay('4')">4</button>
+			<button onclick="appendToDisplay('5')">5</button>
+			<button onclick="appendToDisplay('6')">6</button>
+			<button onclick="appendToDisplay('*')" class="operator-btn">*</button> <!-- set the class of operator button to change color using CSS -->
+			<button onclick="appendToDisplay('1')">1</button>
+			<button onclick="appendToDisplay('2')">2</button>
+			<button onclick="appendToDisplay('3')">3</button>
+			<button onclick="appendToDisplay('/')" class="operator-btn">/</button> <!-- set the class of operator button to change color using CSS -->
+			<button onclick="appendToDisplay('0')">0</button>
+			<button onclick="appendToDisplay('.')">.</button>
+			<button onclick="calculate()">=</button>
+			<!-- "calculate()" this function will make the operation calculated by pressing the buttton "=" -->
+			<button onclick="clearDisplay()" class="operator-btn">C</button> <!-- set the class of operator button to change color using CSS -->
+
+
+		</div>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
