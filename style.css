@@ -1,0 +1,62 @@
+body{
+	margin: 0; /* Remove the margin */
+	/* I want to position the calculator in the middle of the browser */
+	display: flex; /* Make the position of the box flexible */
+	justify-content: center; /* position the box to the center for horizontal alignment */
+	align-items: center; /* for vertical alignment */
+	height: 100vh; /* Adjusting the height to 100% */
+	background-color: hsl(0,0%,95%); /* Adjusting the background color of the browser */
+}
+#calculator{ /* calling the 'calculator' element from HTML code */
+	/* This will change the background */
+	font-family: Arial, sans-serif; /* Adjusting the fonts */
+	background-color: hsl(0,0%,15%); /* Adjusting the background color */
+	border-radius: 15px; /* Adjusting the radius of the corner */
+	max-width: 500px; /* adjusting the width of the background */
+	overflow: hidden; /* setting element to be hidden if overflowing  */
+}
+#display{ /* Adjusting the style of the display */
+	width: 100%; /* Adjusting the display width */
+	padding: 20px; /* Adjusting the display padding */
+	font-size: 5rem; /* Setting the font size of the display */
+	text-align: left; /* Adjusting the text alignment of the display to the left */
+	border: none; /* Remove the display border */
+	background-color: hsl(0,0%,20%); /* Adjusting the color of the display */
+	color: white; /* Adjusting the color of the character that will be in the display to white */
+
+}
+#keys{ 	/* calling the 'keys' element from HTML code */
+
+	display: grid;	/* arranging buttons in grid */
+	grid-template-columns: repeat(4, 1fr); 	/* use 'repeat' to arrange columns repeatedly 4 times, fr means fractional unit. */
+	gap: 10px; /* defining gap between each button */
+	padding: 25px; /* insert a padding around the buttons */
+}
+
+/* Setting the size, shape and color for all buttons */
+button{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px; /* Make the shape circle */
+	border: none; /* Removing the border line of the circle */
+	background-color: hsl(0, 0%, 30%); /* make it black, but adjust the lightness to 30% to make it aesthetic */
+	color: white; /* set the character in the button to be white */
+	font-size: 3rem; /* set the character size in the button to be larger */
+	font-weight: bold; /* set the character style to be bold */
+	cursor: pointer; /* when hovering the cursor on the button, it'll become pointer */
+}
+button:hover{ /* I want to make the button change color when the cursor is hovering */
+	background-color: hsl(0,0%,40%);
+}
+button:active{ /* I want to make the button blinking when clicked */
+	background-color: hsl(0,0%,50%);
+}
+.operator-btn{
+	background-color: hsl(35, 100%, 55%); /* Adjust the operator button color to orange. */
+}
+.operator-btn:hover{ /* Increase the lightness when hovering. */
+	background-color: hsl(35, 100%, 65%); 
+}
+.operator-btn:active{ /* Increase the lightness when clicking. */
+	background-color: hsl(35, 100%, 75%); 
+}
